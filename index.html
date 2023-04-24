@@ -4,55 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Shopping Cart</title>
-
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <iconify-icon icon="mdi:home"></iconify-icon>
 </head>
 <body>
+    <!-- Start Conatiner -->
+<div class="conatiner">
+    <!-- Header Page -->
     <header>
-        <div class="overlay"></div>
-        <nav>
-            <h2>SHOP</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li class="cart">
-                    <a href="cart.html">
-                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <!-- Logo -->
+      <div class="header-logo">
+        <img src="images/Logo/LOGO2.png" alt="" class="logo">
+      </div>
+      <!-- Nav Links -->
+      <div class="header-nav">
+        <li class="header-favoriet">
+          <i class='bx bx-heart'></i>
+          <span class="favbadge"><span></span></span>
+        </li>
+        <li class="header-cart">
+          <i class='bx bx-shopping-bag'></i>
+          <span class="badge"><span>0</span></span>
+        </li>
+      </div>
     </header>
-    <div class="container">
-        <div class="image">
-            <img src="./images/Home and Living/Appliances/appliances1.jpg" alt="appliances1.jpg">
-            <h4>Personal Three Door Refrigerator</h4>
-            <h4>₱4936</h4>
-            <a class="add-cart cart1" href="#">Add to Cart</a>
-        </div>
-        <div class="image">
-            <img src="./images/Home and Living/Bedroom/image1.jpg" alt="image1.jpg">
-            <h4>Palermo Queen Size Bed Frame</h4>
-            <h4>₱19990</h4>
-            <a class="add-cart cart2" href="#">Add to Cart</a>
-        </div>
-        <div class="image">
-            <img src="./images/Home and Living/Dining/image2.jpg" alt="image2.jpg">
-            <h4>Solid Wood Dining Chair</h4>
-            <h4>₱359</h4>
-            <a class="add-cart cart3" href="#">Add to Cart</a>
-        </div>
-        <div class="image">
-            <img src="./images/Bedroom/image1.jpg" alt="furniture1.jpg">
-            <h4>Sofa Bed for Living Room</h4>
-            <h4>₱6490</h4>
-            <a class="add-cart cart4" href="#">Add to Cart</a>
-        </div>
+    <!-- End Header -->
+  
+    <!-- Search Area -->
+    <div class="search-area">
+      <h2>Search To Product</h2>
+      <input type="text" class="inputSearch" placeholder="Product Name">
     </div>
+    <!-- End Search -->
+  
+    <!-- Products Area -->
+    <div class="products-area"></div>
+    <!-- Alarm For No Search  -->
+    <div class="noSearchAlarm">
+      ! No products were found matching your selection.
+    </div>
+    <!-- End Products Area -->
+  
+    <!-- Cart Container -->
+    <div class="cart-container">
+      <!-- Cart Header -->
+      <div class="cart-header">
+        <!-- Heading Text -->
+        <h2>Your Cart</h2>
+        <!-- Close Cart Button -->
+        <div class="closeCart-btn">
+          <div class="close-cart-action">
+            <i class='bx bxs-up-arrow-alt bx-tada' ></i>
+            <span>Close</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- No Product Yet Alarm Box -->
+      <div class="noProductsInCart">
+        <i class="bx bx-shopping-bag bx-tada"></i>
+        <h3>No Products Added To The Cart Yet !</h3>
+        <button onclick="closeWindow(cartConatiner)">Return To Shop</button>
+      </div>
+  
+      <!-- In Cart Area -->
+      <div class="inCart-area">
+        <!-- Data Will Be Come From The JavaScript (: -->
+      </div>
+      <!-- In Cart End -->
+  
+      <!-- Controls -->
+      <div class="inCart-controls">
+        <!-- Total Price Box -->
+        <div class="totalPrice-box">
+          <span>Total Price: $0</span>
+        </div>
+        <!-- Checkout Button -->
+        <div class="checkout-btn">
+          <span>Checkout</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Cart Container -->
+  
+    <!-- Start In Favoriet -->
+    <div class="favorites-container">
+      <!-- Favorites Header -->
+      <div class="favorites-header">
+        <!-- Heading Text -->
+        <h2>Your Favorites</h2>
+        <!-- Close Favorites Button -->
+        <div class="closeFavorites-btn">
+          <div class="close-Favorites-action">
+            <i class='bx bxs-up-arrow-alt bx-tada' ></i>
+            <span>Close</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- No Favorites Yet Alarm Box -->
+      <div class="noFavorites">
+        <i class="bx bx-heart bx-tada"></i>
+        <h3>No Favorites Added To The Favorites Yet !</h3>
+        <button onclick="closeWindow(favoritesConatiner)">Return To Shop</button>
+      </div>
+  
+      <!-- In Favorites Area -->
+      <div class="inFavorites-area">
+        <!-- Data Will Be Come From The JavaScript (: -->
+      </div>
+    </div>
+    <!-- End Favoriet -->
+  
+    <!-- Start Footer (: -->
+    <footer>
+      <div class="footer-info">
+        <span>
+          Made With 
+          <i class='bx bxs-heart bx-tada'></i> 
+          By 
+          <a href="#" target="_blanck" title="Instagram">Group 2</a>
+        </span>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+  </div>
+  <!-- End Conatiner -->
+  
+  <!-- Primary Area -->
+  <div class="primary-area">
+    <h2>Primary Color</h2>
+    <!-- Content Area -->
+    <div class="primary-content">
+      <!-- Primary Colors Box -->
+      <div class="primary-colors-box">
+        <span data-primary="rgb(80, 216, 144)"></span>
+        <span data-primary="rgb(103, 58, 183)"></span>
+        <span data-primary="rgb(0, 102, 255)"></span>
+        <span data-primary="rgb(233, 30, 99)"></span>
+      </div>
+      <!-- Toogle Button -->
+      <div class="show-PrimaryBox-Btn">
+        <i class='bx bxs-color-fill bx-tada'></i>
+      </div>
+    </div>
+  </div>
+  <div class="primary-overflow"></div>
+  <!-- End Primary Area -->
+  <script src="index2.js"></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="cart.js"></script>
 </body>
 </html>
